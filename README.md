@@ -15,7 +15,7 @@
 <p> ◻️	Maria Alice Cunha Maciel </p>
 <p> ◻️	Artur Brener Schmit </p>
 <p> ◻️	Leonardo Brentano </p>
-<p> ◻️	Theo Artur Amaral </p>
+<p> ◻️	Théo Artur Amaral </p>
 <p> ◻️	Gabriela Rocha Georg </p>
 <p> ◻️	Rafael Silva Franzon </p>
 
