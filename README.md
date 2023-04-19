@@ -8,7 +8,7 @@
 
 <hr>
 
-<h4> Autora: </h4>
+<h4> Autores: </h4>
 
 <p> ◻️	Andressa Hensel Cardoso </p>
 <p> ◻️	Juliana Prade Gomes </p>
