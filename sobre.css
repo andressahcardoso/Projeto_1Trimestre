@@ -1,34 +1,64 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'League Gothic';
 }
+
+
+/* Imagem de fundo e Título */
 
 .main_img {
     background: url("assets/coffeImg.png") no-repeat;
     background-size: cover;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 'header'
+                         'title_contains'
+                         'informations'
+}
+
+.header{
+    grid-area: header;
 }
 
 .title_contains {
-    display: flex;
-    height: 100vh;
+    grid-area: title_contains;
     padding-left: 35vw;
-    flex-direction: row;
-    justify-content: center; /* ALinhar no centro - HORIZONTAL */
-    align-content: center; /* Alinhar no centro - VERTICAL */
-    flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
+    display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-content: center; 
+        flex-wrap: wrap;  
 }
 
 .title {
-    color: #fff;
     font-family: 'League Gothic';
     font-size: 22vh;
-    word-wrap: break-word; 
-    word-break: break-word;
+    color: #fff;
 }
 
 .coffe_icon {
-    padding-top: 5vh;
     height: 25vh;
     width: 25vh;
+    padding-top: 5vh;
 }
+
+
+/* Informações */
+
+.informations {
+    grid-area: informations;
+    padding: 0vw 5vw 0vw 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.emSenac {
+    color: #fff;
+    font-size: 24px; 
+}
+
+
+
