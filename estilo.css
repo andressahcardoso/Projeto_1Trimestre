@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+}
+
+.titulo{
+    text-transform: uppercase;
+}
+
+.navbar {
+    overflow: hidden;
+    box-shadow: inset;
+    color: white;
+    padding: 14px;
+    font-size: 130%; 
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    padding: 14px;
+    font-size: 130%; 
+    
+    color: white;
+    text-decoration: none;
+}
+
+.navbar:hover {
+    background-color: #A5A29B;
+    opacity: 0.2;
+}
+
+
+.inicio{
+    background-image: url(./fundocafe.jpg);
+    height: 100vh;
+}
+
+h1{
+    color: white;
+}
