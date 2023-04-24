@@ -22,6 +22,28 @@
     grid-area: header;
 }
 
+.navbar {
+    overflow: hidden;
+    box-shadow: inset;
+    color: white;
+    padding: 14px;
+    font-size: 130%; 
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    padding: 14px;
+    font-size: 130%; 
+    color: white;
+    text-decoration: none;
+}
+
+.navbar:hover {
+    background-color: #A5A29B;
+    opacity: 0.2;
+}
+
 
 /* Título */
 
