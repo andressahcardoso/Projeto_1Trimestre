@@ -18,30 +18,27 @@
 
 /* Cabeçalho */
 
-.header{
+header{
     grid-area: header;
-}
-
-.navbar {
-    overflow: hidden;
-    box-shadow: inset;
+    background-color: #09090966;
     color: white;
-    padding: 14px;
-    font-size: 130%; 
+    padding: 4vh;
+
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
 }
 
-.navbar a {
-    float: right;
-    display: block;
-    padding: 14px;
-    font-size: 130%; 
+header a {
+    padding: 1vw;
+    font-size: 25px; 
     color: white;
     text-decoration: none;
 }
 
-.navbar:hover {
-    background-color: #A5A29B;
-    opacity: 0.2;
+.logo_title {
+    color: white;
+    font-size: 35px;
 }
 
 
@@ -76,7 +73,7 @@
     grid-area: informations;
     padding: 0vw 5vw 0vw 5vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .SenacText {
@@ -126,6 +123,7 @@
 .person label {
     font-family: 'arial';
     font-size: 16px;
+    padding-top: 1vh;
 }
 
 .informacoesEmSenac {
