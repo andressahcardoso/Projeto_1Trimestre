@@ -141,38 +141,64 @@ h2 {
     font-family: 'arial';
 }
 
+
+
+/* Inscrição */
+
+.subscribe_text {
+    padding-top: 8vh;
+    margin-left: 3vw;
+    color: #7C5039;
+    font-size: 18px;
+    font-family: 'arial';
+    
+}
+
+.subscribe {
+    border-top: 2px solid #7C5039;
+    margin: 1vh 2vw 1vh 2vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh;
+}
+
+
 /* Botão inscreva-se*/
 
-.button2 {
-  display: inline-block;
+.subscribe_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   transition: all 0.2s ease-in;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: #090909;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
+  color: #7c5039d8;
+  padding: 0.7em 8em;
+  font-size: 20px;
   border-radius: 0.5em;
   background: #e8e8e8;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #7c5039d8;
   box-shadow: 6px 6px 12px #c5c5c5,
              -6px -6px 12px #ffffff;
 }
 
-.button2:active {
-  color: #666;
+.subscribe_button:active {
+  color: #7C5039;
   box-shadow: inset 4px 4px 12px #c5c5c5,
              inset -4px -4px 12px #ffffff;
+
 }
 
-.button2:before {
+.subscribe_button:before {
   content: "";
   position: absolute;
-  left: 50%;
+
+
   transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
+  
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   display: block;
@@ -180,7 +206,7 @@ h2 {
   z-index: -1;
 }
 
-.button2:after {
+.subscribe_button:after {
   content: "";
   position: absolute;
   left: 55%;
@@ -188,27 +214,26 @@ h2 {
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: #009087;
+  background-color: #7c5039d8;
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -1;
 }
 
-.button2:hover {
+.subscribe_button:hover {
   color: #ffffff;
-  border: 1px solid #009087;
+  border: 1px solid #7c5039d8;
 }
 
-.button2:hover:before {
+.subscribe_button:hover:before {
   top: -35%;
-  background-color: #009087;
+  background-color: #7c5039d8;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-.button2:hover:after {
+.subscribe_button:hover:after {
   top: -45%;
-  background-color: #009087;
+  background-color: #7c5039d8;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-
