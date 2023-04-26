@@ -146,31 +146,26 @@ h2 {
 /* Inscrição */
 
 .subscribe_text {
-    padding-top: 8vh;
-    margin-left: 3vw;
+    padding-top: 10vh;
     color: #7C5039;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'arial';
+    font-weight: 600;
+    text-align: center;
     
 }
 
 .subscribe {
-    border-top: 2px solid #7C5039;
-    margin: 1vh 2vw 1vh 2vw;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4vh;
+    padding-top: 4vh;
 }
 
 
 /* Botão inscreva-se*/
 
 .subscribe_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   transition: all 0.2s ease-in;
   position: relative;
   overflow: hidden;
@@ -195,7 +190,6 @@ h2 {
 .subscribe_button:before {
   content: "";
   position: absolute;
-
 
   transform: translateX(-50%) scaleY(1) scaleX(1.25);
   
@@ -236,4 +230,28 @@ h2 {
   top: -45%;
   background-color: #7c5039d8;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 10vh;
+    padding: 3vh;
+    background-color: #8c6a5a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 15vw;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'arial';
+    padding: 0.5vh;
 }

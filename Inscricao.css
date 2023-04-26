@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Gothic';
+}
+
+.main_img {
+    
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 'header'
+                         'sectionSubscribe'
+}
+
+
+/* Cabeçalho */
+
+header{
+    background: url("assets/coffeImg.png") no-repeat;
+    
+    background-size: cover;
+
+    grid-area: header;
+    color: white;
+
+}
+
+
+header div{
+    background-color: #09090966;
+    height: 10vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+header a {
+    padding: 1vw;
+    font-size: 25px; 
+    color: white;
+    text-decoration: none;
+}
+
+.logo_title {
+    color: white;
+    font-size: 35px;
+}
+
+
+/* Informações */
+
+.subscribeInforms {
+    font-family: 'arial';
+}
+
+/* Form. de Inscrição */
+
+.sectionSubscribe{
+    grid-area: sectionSubscribe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* ALinhar no centro - HORIZONTAL */
+    align-content: center; /* Alinhar no centro - VERTICAL */
+    flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
+    padding: 20px;
+}
+
+.subscribe {
+    position: relative;
+    height: 240px;
+    width: 350px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 4px;
+    color: #333;
+    box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+}
+  
+.subscribe:after {
+    position: absolute;
+    content: "";
+    right: -10px;
+    bottom: 18px;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+  
+.paragrafo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+  
+.input {
+    border: none;
+    border-bottom: 1px solid rgb(107, 66, 38);
+    padding: 10px;
+    width: 82%;
+    font-size: medium;
+    background: transparent;
+    transition: all .25s ease;
+}
+  
+.input:focus {
+    outline: none;
+    border-bottom: 1px solid #0d095e;
+}
+  
+.buton {
+    position: absolute;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: rgb(133, 77, 39);
+    color: #FFF;
+    padding: 12px 25px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    right: -10px;
+    bottom: -20px;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+}
+  
+.buton:hover {
+    background-color: rgb(133, 77, 39,);
+    box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+} 
