@@ -15,22 +15,36 @@
       <div>
         <h2 class="logo_title">Café Brasil</h2>
         <nav>   
-            <a href="">Vlog</a>
-            <a href="oficina.html">Sobre</a>
-            <a href="">Home</a>
+            <a href="vlog.html">Vlog</a>
+            <a href="CafeBrasil.html#palestrantes">Palestrantes</a>
+            <a href="CafeBrasil.html">Home</a>
         </nav>
       </div>
     </header>  
+
+    
     
     <section class="sectionSubscribe">
       <div class="subscribeInforms">
-        <p>Itens necessários e informações finais sobre a palestra.</p>
+        <p class="text">
+          Como descrito na página anterior, o principal tema abordado nesta oficina será o café como símbolo da economia brasileira. Apresentaremos toda sua história com atividades interativas. Mostrando inúmeras maneiras para sua produção e degustação, em que os visitantes poderão utilizar diferentes instrumentos de fazer café que o nosso grupo trará e disponibilizará na oficina . 
+          Nosso grupo decidiu trabalhar em cima dessa temática  levando em consideração o tema norteador deste trimestre “Brasilidades”, sabemos que o café é um importante representante de nossa cultura no exterior, se tornando um símbolo de potência de nosso país. 
+          Tendo em vista que somos grandes exportadores deste grão e ele tem embasado a economia desde o século XIX. Transpassando assim, inúmeros episódios da sociedade e atravessando gerações de brasileiros.
+          </p>
       </div>
       <div class="subscribe">
         <p class="paragrafo">Venha saborear essa experiência conosco</p>
-        <input class="input" placeholder="Seu e-mail aqui"  name="email" type="email">
-        <input class="input" placeholder="Qual horário você virá?"  name="hora" type="hour">
-        <div class="buton">ENVIAR</div>
+        <form action="https://formspree.io/f/mdovbrdj" method="POST" class="container newsleter">
+          <input class="input" placeholder="Nome Completo" name="nome" type="text" required>
+          <select class="input" id="turma" placeholder="Turma"  name="turma" required>
+            <option value="3A">Turma</option>
+            <option value="3A">3A</option>
+            <option value="3B">3B</option>
+            <option value="2A">2A</option>
+          </select>
+          <input class="input" placeholder="Qual horário você virá?"  name="hora" type="time" required>
+          <button class="buton" type="submit" >ENVIAR</button>
+        </form>
       </div>   
     </section>
   </section>
