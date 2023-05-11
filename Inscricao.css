@@ -5,32 +5,38 @@
 }
 
 .main_img {
-    
-    display: grid;
-    grid-template-rows: 10vh 90vh;
-    grid-template-areas: 'header'
-                         'sectionSubscribe'
+    background: url("assets/coffeImg.png") no-repeat;
+
+    background-size: cover;
+    height: 100vh;
+  
 }
 
+.background {
+    background-color: #09090966;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 'header'
+                         'title_contains'
+                         'informations'
+}
+
+
+.text {
+    font-family:'arial';
+    font-size: 16px;
+    text-align: left;
+    text-indent: 3vw;
+    padding-top: 4vh;
+    line-height: 22px;
+}
 
 /* Cabeçalho */
 
 header{
-    background: url("assets/coffeImg.png") no-repeat;
-    
-    background-size: cover;
-
     grid-area: header;
     color: white;
-
-}
-
-
-header div{
-    background-color: #09090966;
-    height: 10vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding: 4vh;
 
     display: flex;
         align-items: center;
@@ -49,107 +55,174 @@ header a {
     font-size: 35px;
 }
 
-.text {
-    padding-top: 3vh;
-    font-family: 'arial';
-}
 
-/* Informações */
+/* Inscrição main */
 
-.subscribeInforms {
-    font-family: 'arial';
-    width: 30vw;
-    margin-left: 0px;
-    text-align: justify;
-    margin-right: 7vw;
-    text-indent: 3vw;
-}
-
-/* Form. de Inscrição */
-
-.sectionSubscribe{
-    grid-area: sectionSubscribe;
+.geral {
     display: flex;
-    flex-direction: row;
-    justify-content: center; /* ALinhar no centro - HORIZONTAL */
-    align-content: center; /* Alinhar no centro - VERTICAL */
-    flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
+
+.informacoes {
+    height: 70vh;
+    width: 35%;
+    padding: 10vh;
+    padding-right: 8vw;
+
+    color: white;   
+}
+
+.inscricao {
+    width: 70%;
+    height: 63vh;
+    padding-top: 10vh;
+    margin-top: 7vh;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+
 
 
 .subscribe {
+    width: 36%;
+    height: 56vh;
+    padding-top: 10vh;
+    padding: 3vw;
+
+    margin-left: 5vw;
+    margin-top: 7vh;
     position: relative;
-    height: 40vh;
-    width: 25vw;
-    padding: 20px;
-    background-color: #FFF;
-    border-radius: 4px;
+
+    background-color: white;
+    border-radius:  20px;
+    
     color: #333;
-    box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.288);
 }
   
 .subscribe:after {
     position: absolute;
-    content: "";
-    right: -10px;
+
     bottom: 18px;
+
     border-left: 0px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid black;
 }
   
 .paragrafo {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium';
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    margin-bottom: 8vh;
     line-height: 28px;
-    margin-bottom: 2vh;
+    text-align: center;
+   
+    font-family:'arial';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color:#7C5039;
+    background: url('assets/coffeImg.png');
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    padding: 8vh 10vh 8vh 6vh;
 }
   
+
 .input {
+    width: 100%;
     margin-top: 2vh;
+    padding: 10px;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'arial';
     border: none;
     border-bottom: 1px solid #7C5039;
-    padding: 10px;
-    width: 82%;
-    font-size: medium;
-    background: transparent;
     transition: all .25s ease;
+}
+
+::placeholder {
+    color: #6b6b6bd3;
+}
+
+.input2 {
+    width: 85.5%;
+}
+
+.input_time {
+    width: 80%;
 }
   
 .input:focus {
     outline: none;
-    border-bottom: 1px solid #0d095e;
 }
   
-.buton {
+button {
+    width: 15vw;
+    padding: 12px 25px;
+    right: -10px;
+    bottom: -20px;
+
     position: absolute;
-    border-radius: 30px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+    display: inline-block;
+
     background-color: #7C5039;
     color: #FFF;
-    padding: 12px 25px;
-    display: inline-block;
+
     font-size: 14px;
     font-family: 'Franklin Gothic Medium';
     letter-spacing: 3px;
-    right: -10px;
-    bottom: -20px;
+
+    border: 0px;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: -5px 6px 20px 0px rgba(255, 255, 255, 0.16);
+   
     cursor: pointer;
-    transition: all .25s ease;
-    box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+    transition: all .25s ease; 
 }
   
-.buton:hover {
+buton:hover {
     background-color: rgb(133, 77, 39,);
-    box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+    box-shadow: -5px 6px 20px 0px rgba(255, 255, 255, 0.288);
 } 
-
-
 
 #turma:first-child {
     display: none;
 }
+
+
+
+
+
+
+
+.title_text {
+    
+    background: url('assets/coffeImg2.png');
+    background-repeat: repeat;
+    background-size:auto;
+    font-weight: bold;
+    font-family: verdana, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 100%;
+    }
+    span{
+      text-shadow: 0 0 20px rgba(255,255,255,.2);
+      font-size: 36px;
+    }
+    

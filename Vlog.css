@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Gothic';
+}
+
+.main_img {
+    background: url("assets/coffeImg.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 'header'
+                         'vlog'
+}
+
+
+/* Cabeçalho */
+
+header{
+    grid-area: header;
+    background-color: #09090966;
+    color: white;
+    padding: 4vh;
+
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+header a {
+    padding: 1vw;
+    font-size: 25px; 
+    color: white;
+    text-decoration: none;
+}
+
+.logo_title {
+    color: white;
+    font-size: 35px;
+}
+
+iframe {
+    border: 5px solid white;
+    box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.288);
+    padding: 5px;
+    
+}
+
+.vlog {
+    grid-area: vlog;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ALinhar no centro - HORIZONTAL */
+    align-content: center; /* Alinhar no centro - VERTICAL */
+    flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
+}

@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Inscricao.css" type="text/css">
-    <title>Inscreva-se</title>
+    <title>Document</title>
 
+    <link rel="stylesheet" href="Inscricao.css">
     <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
 </head>
-<body>    
-  <section class="main_img">
-    <header >
-      <div>
-        <h2 class="logo_title">Café Brasil</h2>
-        <nav>   
-            <a href="vlog.html">Vlog</a>
-            <a href="CafeBrasil.html#palestrantes">Palestrantes</a>
-            <a href="CafeBrasil.html">Home</a>
-        </nav>
-      </div>
-    </header>  
+<body>
+    <section class="main_img">
+        <div class="background">
+        <header class="navbar">
+            <h2 class="logo_title">Café Brasil</h2>
+            <nav>   
+                <a href="Vlog.html">Vlog</a>
+                <a href="CafeBrasil.html#palestrantes">Palestrantes</a>
+                <a href="CafeBrasil.html">Home</a>
+            </nav>
+        </header>
 
-    
-    
-    <section class="sectionSubscribe">
-      <div class="subscribeInforms">
-        <p class="text">
-          Como descrito na página anterior, o principal tema abordado nesta oficina será o café como símbolo da economia brasileira. Apresentaremos toda sua história com atividades interativas. Mostrando inúmeras maneiras para sua produção e degustação, em que os visitantes poderão utilizar diferentes instrumentos de fazer café que o nosso grupo trará e disponibilizará na oficina . 
-          Nosso grupo decidiu trabalhar em cima dessa temática  levando em consideração o tema norteador deste trimestre “Brasilidades”, sabemos que o café é um importante representante de nossa cultura no exterior, se tornando um símbolo de potência de nosso país. 
-          Tendo em vista que somos grandes exportadores deste grão e ele tem embasado a economia desde o século XIX. Transpassando assim, inúmeros episódios da sociedade e atravessando gerações de brasileiros.
-          </p>
-      </div>
-      <div class="subscribe">
-        <p class="paragrafo">Venha saborear essa experiência conosco</p>
-        <form action="https://formspree.io/f/mdovbrdj" method="POST" class="container newsleter">
-          <input class="input" placeholder="Nome Completo" name="nome" type="text" required>
-          <select class="input" id="turma" placeholder="Turma"  name="turma" required>
-            <option value="3A">Turma</option>
-            <option value="3A">3A</option>
-            <option value="3B">3B</option>
-            <option value="2A">2A</option>
-          </select>
-          <input class="input" placeholder="Qual horário você virá?"  name="hora" type="time" required>
-          <button class="buton" type="submit" >ENVIAR</button>
-        </form>
-      </div>   
+        <section class="geral">
+            <div class="informacoes">
+                <p class="text">
+                    Como descrito na página anterior, o principal tema abordado nesta oficina será o café como símbolo da economia brasileira. Apresentaremos toda sua história com atividades interativas. Mostrando inúmeras maneiras para sua produção e degustação, em que os visitantes poderão utilizar diferentes instrumentos de fazer café que o nosso grupo trará e disponibilizará na oficina . 
+                    Nosso grupo decidiu trabalhar em cima dessa temática  levando em consideração o tema norteador deste trimestre “Brasilidades”, sabemos que o café é um importante representante de nossa cultura no exterior, se tornando um símbolo de potência de nosso país. 
+                    Tendo em vista que somos grandes exportadores deste grão e ele tem embasado a economia desde o século XIX. Transpassando assim, inúmeros episódios da sociedade e atravessando gerações de brasileiros.
+                    </p>
+                </div>
+
+
+                <div class="subscribe">
+                    <div class="outer-text">
+                        <div class="title_text">
+                          <span>Venha saborear essa experiência conosco</span>
+                        </div>
+                      </div>
+                    
+                    <form action="https://formspree.io/f/mdovbrdj" method="POST" class="container newsleter">
+                      <input class="input" placeholder="Nome Completo" name="nome" type="text" required>
+                      <select class="input input2" id="turma" placeholder="Turma"  name="turma" required>
+                        <option value="3A">Turma</option>
+                        <option value="3B">3B - Manhã</option>
+                        <option value="2A">2A - Manhã</option>
+                        <option value="2A">2B - Manhã</option>
+                        <option value="2A">2A - Tarde</option>
+                      </select>
+                      <input class="input input_time" placeholder="Qual horário você virá?"  name="hora" type="time" value="09:15" required>
+                      <button type="submit" >ENVIAR</button>
+                    </form>
+                  </div> 
+           
+        </section>
+    </div>
     </section>
-  </section>
+
 </body>
 </html>
