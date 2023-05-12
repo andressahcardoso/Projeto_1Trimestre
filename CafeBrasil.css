@@ -141,6 +141,10 @@ h2 {
     font-family: 'arial';
 }
 
+.text2 {
+    font-family: 'arial';
+}
+
 
 
 /* Inscrição */
@@ -254,4 +258,36 @@ footer p {
     font-size: 16px;
     font-family: 'arial';
     padding: 0.5vh;
+}
+
+
+
+
+.container {
+    display: none;
+    padding: 6vh;
+    padding-left: 8vw;
+    padding-right: 10vw;
+    margin-top: 6vh;
+    text-align: justify;
+    text-indent: 3vw;
+    border-top: 1px solid #8c6a5a;
+    border-bottom: 1px solid #8c6a5a;
+}
+
+.saibaMais {
+    float: right;
+
+    letter-spacing: .1em;
+    font-size: 16px;
+
+    margin-top: 8vh;
+    padding: .5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    border: 0px;
+    background-color: #8c6a5a;
+    color: white;
+    border-radius: 10px;
 }
