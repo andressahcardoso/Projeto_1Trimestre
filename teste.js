@@ -1,6 +1,6 @@
-// var valorDaVariavel = localStorage.getItem('nomeDaVariavel');
+var valorDaVariavel = localStorage.getItem('nomeDaVariavel');
 
-// console.log(valorDaVariavel)
+console.log(valorDaVariavel)
 
 
-// document.getElementById('name').value=valorDaVariavel;
+document.getElementById('name').value=valorDaVariavel;

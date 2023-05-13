@@ -312,3 +312,115 @@ footer p {
 ::-webkit-scrollbar-track {
     background: rgba(248, 246, 246, 0.2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none; /* Esconde a caixa de diálogo */
+    position: fixed; /* Mantém a caixa de diálogo fixa no topo da página */
+    z-index: 1000; /* Define o nível do elemento */
+    left: 0;
+    top: 0;
+    width: 100%; /* Cobrindo toda a tela */
+    height: 100%; /* Cobrindo toda a tela */
+    overflow: auto; /* Habilita rolagem quando a caixa de diálogo é maior que a tela */
+    background-color: rgba(0,0,0,0.4); /* Define uma cor de fundo semi-transparente para a caixa de diálogo */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Coloca a caixa de diálogo no meio da tela verticalmente e com margens nas laterais */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 40%; /* Define a largura da caixa de diálogo */
+    height: 25vh;
+  }
+  
+  .welcomeTitle {
+    color: #7C5039;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    border: 2px solid #7C5039;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 18px;
+  } */
+
+  .input {
+    width: 34vw;
+    margin-top: 5vh;
+    padding: 10px;
+    margin-left: 2vw;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'arial';
+    border: none;
+    border-bottom: 1px solid #7C5039;
+    transition: all .25s ease;
+}
+
+::placeholder {
+    color: #6b6b6bd3;
+}
+
+.input2 {
+    width: 85.5%;
+}
+
+.input_time {
+    width: 80%;
+}
+  
+.input:focus {
+    outline: none;
+}
+
+
+  .okButton {
+    
+        float: right;
+    
+        letter-spacing: .1em;
+        font-size: 18px;
+    
+        margin-top: 3vh;
+        margin-right: 2.5vw;
+        padding: .5vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    
+        border: 0px;
+        background-color: #8c6a5a;
+        color: white;
+        border-radius: 10px;
+
+  }
+ 

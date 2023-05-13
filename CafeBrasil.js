@@ -13,6 +13,6 @@ btn.addEventListener('click', function() {
   }
 });
 
-// var nome = prompt('Informe o seu nome: ')
 
-// localStorage.setItem('nomeDaVariavel', nome);
+
+
