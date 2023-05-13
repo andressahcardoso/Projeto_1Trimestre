@@ -47,6 +47,7 @@ header a {
 .title_contains {
     grid-area: title_contains;
     padding-left: 35vw;
+
     display: flex;
         flex-direction: row;
         justify-content: center; 
@@ -73,7 +74,7 @@ header a {
     grid-area: informations;
     padding: 0vw 5vw 0vw 5vw;
     display: flex;
-    justify-content: end;
+        justify-content: end;
 }
 
 .SenacText {
@@ -94,8 +95,6 @@ header a {
 
 .palestrantesSection{
     width: 70%;
-    display: flex;
-        flex-direction: column;
 }
 
 .palestrantesSection div{
@@ -124,7 +123,11 @@ header a {
     font-family: 'arial';
     font-size: 15px;
     padding-top: 1vh;
+    text-align: center;
 }
+
+
+/* Informções sobre a oficina */
 
 .informacoesEmSenac {
     width: 20%;
@@ -139,140 +142,6 @@ h2 {
 .text {
     padding-top: 3vh;
     font-family: 'arial';
-}
-
-.text2 {
-    font-family: 'arial';
-}
-
-
-
-/* Inscrição */
-
-.subscribe_text {
-    padding-top: 10vh;
-    color: #7C5039;
-    font-size: 16px;
-    font-family: 'arial';
-    font-weight: 600;
-    text-align: center;
-    
-}
-
-.subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 4vh;
-}
-
-
-/* Botão inscreva-se*/
-
-.subscribe_button {
-  transition: all 0.2s ease-in;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  color: #7c5039d8;
-  padding: 0.7em 8em;
-  font-size: 20px;
-  border-radius: 0.5em;
-  background: #e8e8e8;
-  border: 1px solid #7c5039d8;
-  box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
-}
-
-.subscribe_button:active {
-  color: #7C5039;
-  box-shadow: inset 4px 4px 12px #c5c5c5,
-             inset -4px -4px 12px #ffffff;
-
-}
-
-.subscribe_button:before {
-  content: "";
-  position: absolute;
-
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
-}
-
-.subscribe_button:after {
-  content: "";
-  position: absolute;
-  left: 55%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.45);
-  top: 180%;
-  width: 160%;
-  height: 190%;
-  background-color: #7c5039d8;
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
-}
-
-.subscribe_button:hover {
-  color: #ffffff;
-  border: 1px solid #7c5039d8;
-}
-
-.subscribe_button:hover:before {
-  top: -35%;
-  background-color: #7c5039d8;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.subscribe_button:hover:after {
-  top: -45%;
-  background-color: #7c5039d8;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-
-/* Footer */
-
-footer {
-    margin-top: 10vh;
-    padding: 3vh;
-    background-color: #8c6a5a;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer img {
-    width: 15vw;
-}
-
-footer p {
-    color: #ffffff;
-    font-size: 16px;
-    font-family: 'arial';
-    padding: 0.5vh;
-}
-
-
-
-
-.container {
-    display: none;
-    padding: 6vh;
-    padding-left: 8vw;
-    padding-right: 10vw;
-    margin-top: 6vh;
-    text-align: justify;
-    text-indent: 3vw;
-    border-top: 1px solid #8c6a5a;
-    border-bottom: 1px solid #8c6a5a;
 }
 
 .saibaMais {
@@ -293,13 +162,143 @@ footer p {
 }
 
 
+/* Container - Mais informações */
+
+.container {
+    display: none;
+    padding: 6vh;
+    padding-left: 8vw;
+    padding-right: 10vw;
+    margin-top: 6vh;
+
+    text-align: justify;
+    text-indent: 3vw;
+    border-top: 1px solid #8c6a5a;
+    border-bottom: 1px solid #8c6a5a;
+}
+
+.text2 {
+    font-family: 'arial';
+}
 
 
+/* Inscrição */
+
+.subscribe_text {
+    padding-top: 10vh;
+    color: #7C5039;
+    font-size: 16px;
+    font-family: 'arial';
+    font-weight: 600;
+    text-align: center;
+}
+
+.subscribe {
+    padding-top: 4vh;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
 
 
+/* Botão inscreva-se*/
+
+.subscribe_button {
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    padding: 0.7em 8em;
+    font-size: 20px;
+
+    color: #7c5039d8;
+    background: #e8e8e8;
+  
+    border-radius: 0.5em;
+    border: 1px solid #7c5039d8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.subscribe_button:active {
+    color: #7C5039;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.subscribe_button:before {
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.subscribe_button:after {
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+  
+    width: 160%;
+    height: 190%;
+    left: 55%;
+    top: 180%;
+    
+    background-color: #7c5039d8;
+    border-radius: 50%; 
+}
+
+.subscribe_button:hover {
+    color: #ffffff;
+    border: 1px solid #7c5039d8;
+}
+
+.subscribe_button:hover:before {
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    top: -35%;
+    background-color: #7c5039d8;
+}
+
+.subscribe_button:hover:after {
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    top: -45%;
+    background-color: #7c5039d8;
+}
 
 
+/* Footer */
 
+footer {
+    margin-top: 10vh;
+    padding: 3vh;
+    background-color: #8c6a5a;
+
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+footer img {
+    width: 15vw;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'arial';
+    padding: 0.5vh;
+}
+
+
+/* ScrollBar */
 
 ::-webkit-scrollbar {
     width: .5vw;
