@@ -12,7 +12,3 @@ btn.addEventListener('click', function() {
       btn.innerText='Ocultar';
   }
 });
-
-
-
-
