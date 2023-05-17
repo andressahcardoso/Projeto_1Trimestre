@@ -55,3 +55,10 @@ iframe {
     align-content: center; /* Alinhar no centro - VERTICAL */
     flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
 }
+
+@media only screen and (max-width: 700px){
+    .vlog iframe{
+        width: 350px;
+        height: 250px;
+    }
+}
