@@ -580,5 +580,38 @@ footer p {
     border-radius: 50%; 
 }
 
+
+/* Nome do Usuário - Modal */
+
+.modal {
+    display: none; /* Esconde a caixa de diálogo */
+    position: fixed; 
+    margin-top: 10vh;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 60%; 
+    height: 25vh;
+}
+  
+.welcomeTitle {
+    color: #7C5039;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+  
+
 }
 
