@@ -225,4 +225,156 @@ buton:hover {
         width: 60vw;
     }
 
+    header a {
+        padding: 1vw;
+        font-size: 22px; 
+        color: white;
+        text-decoration: none;
+    }
+
+
+    
+    /* Inscrição main */
+
+    .geral {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .informacoes {
+        height: 70vh;
+        width: 90%;
+        padding: 10vh;
+        padding-right: 8vw;
+
+        color: white;   
+    }
+
+    .inscricao {
+        width: 90%;
+        height: 63vh;
+        padding-top: 10vh;
+        margin-top: 7vh;
+
+        background-color: white;
+        border-radius: 20px;
+    }
+
+
+
+
+    .subscribe {
+        width: 80%;
+        height: 56vh;
+        padding-top: 10vh;
+        padding: 3vw;
+
+        margin-left: 1vw;
+        margin-top: 7vh;
+        position: relative;
+
+        background-color: white;
+        border-radius:  20px;
+        
+        color: #333;
+        box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.288);
+    }
+    
+    .subscribe:after {
+        position: absolute;
+
+        bottom: 18px;
+
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid black;
+    }
+    
+    .paragrafo {
+        margin-bottom: 8vh;
+        line-height: 28px;
+        text-align: center;
+    
+        font-family:'arial';
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color:#7C5039;
+        background: url('assets/coffeImg.png');
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background: url('bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form {
+        padding: 8vh 6vh 8vh 2vh;
+    }
+    
+
+    .input {
+        width: 100%;
+        margin-top: 2vh;
+        padding: 10px;
+        background: transparent;
+        font-size: 16px;
+        font-family: 'arial';
+        border: none;
+        border-bottom: 1px solid #7C5039;
+        transition: all .25s ease;
+    }
+
+    ::placeholder {
+        color: #6b6b6bd3;
+    }
+
+    .input2 {
+        width: 90.5%;
+    }
+
+    .input_time {
+        width: 80%;
+    }
+    
+    .input:focus {
+        outline: none;
+    }
+    
+    button {
+        width: 100px;
+        padding: 12px 25px;
+        right: -10px;
+        bottom: -20px;
+
+        position: absolute;
+        display: inline-block;
+
+        background-color: #7C5039;
+        color: #FFF;
+
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium';
+        letter-spacing: 3px;
+
+        border: 0px;
+        border-radius: 30px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: -5px 6px 20px 0px rgba(255, 255, 255, 0.16);
+    
+        cursor: pointer;
+        transition: all .25s ease; 
+    }
+    
+    buton:hover {
+        background-color: rgb(133, 77, 39,);
+        box-shadow: -5px 6px 20px 0px rgba(255, 255, 255, 0.288);
+    } 
+
+    #turma:first-child {
+        display: none;
+    }
+
 }

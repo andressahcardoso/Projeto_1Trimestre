@@ -61,4 +61,10 @@ iframe {
         width: 350px;
         height: 250px;
     }
+    header a {
+        padding: 1vw;
+        font-size: 22px; 
+        color: white;
+        text-decoration: none;
+    }
 }
